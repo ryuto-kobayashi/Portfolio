@@ -5,8 +5,10 @@
     <head>
         <meta charset="UTF-8">
         <title>RyutoKobayashi</title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" type="text/css" href="css/bg-gradation.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cherry+Swash&family=Knewave&family=Noto+Sans+JP:wght@300&family=Offside&family=Reenie+Beanie&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -15,98 +17,176 @@
             <div id="copyright">
                 <p>©2020/Ryuto Kobayashi/All Right Reserved</p>
             </div>
-        <header>
-        
-        <main>
+            <hr id="header_line">
+            <div id="logo">
+                <img src="pagelogo.png" width="200px" height="200px">
+            </div>
             <nav id="menulist">
                 <ul style="display:block;">
                     <li>
-                        <a href="#philosophy">Philosophy</a>
+                        <a href="#philosophy" class="scroll">Philosophy</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" class="scroll">About</a>
                     </li>
                     <li>
-                        <a href="#works">Works</a>
+                        <a href="#skills" class="scroll">Skills</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#works" class="scroll">Works</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scroll">Contact</a>
                     </li>                
                 </ul>
-            </nav>            
-            <div id="contents">
-                <div id="myname">
-                    <div id="ryuto">
-                        <p>Ryuto Kobayashi</p>
+            </nav>
+        <header>
+        
+            
+        <main>                
+                <div id="ryuto" class="anchor_top"> 
+                    <div id="me">
+                        <div id="myname">
+                            <span class="letter">R</span>
+                            <span class="letter">y</span>
+                            <span class="letter">u</span>
+                            <span class="letter">t</span>
+                            <span class="letter">o.</span>
+                            <span class="letter">K</span>
+                        </div>
+                            <hr id="line">
+                        <div id="job">
+                            <span class="letter">E</span>
+                            <span class="letter">n</span>
+                            <span class="letter">g</span>
+                            <span class="letter">i</span>
+                            <span class="letter">n</span>
+                            <span class="letter">e</span>
+                            <span class="letter">e</span>
+                            <span class="letter">r</span>
+                        </div>
                     </div>
-                    <div id="description">
-                        <p>Engineer</p>
-                    </div>
-                </div>                
-                <div id="philosophy" style="display: block;">
-                    <br>
-                    "I'm gonna write something shit right here later."
-                    <br>
-                    "Let me say just F**K for now."
-                    <br>
                 </div>
-                <div id="about" style="display: block;">
+                
+                <div id="philosophy" class="anchor">
+                    I'm gonna write something shit right here later.<br>
+                    Let me say just F**K for now.
+                </div>
+                
+                <div id="about" class="anchor">
                     <div class="index">
-                        <p>About me:</p>
+                        <h2>About me:</h2>
+                    </div>
+                    <p id="description">
+                        <br>
+                        Ryuto Kobayashi / 小林 竜斗<br>
+                        1995/10/14 <br>
+                        東京都在住。<br>
+                        浅草で生まれ育ち、幼少期から常に下町文化の中に身を置く。<br>
+                        モノづくりの精神を現代で体現する為にエンジニアを志す。<br>
+                    </p>
+                </div>
+                
+                <div id="skills" class="anchor">
+                    <div class="index">
+                        <h2>Skills:</h2>
                     </div>
                     <br>
                     <br>
-                    "Ryuto Kobayashi (小林 竜斗)"
-                    <br>
-                    "1995/10/14 東京都在住。"
-                    <br>
-                    "浅草で生まれ育ち、幼少期から常に下町文化の中に身を置く。"
-                    <br>
-                    "モノづくりの精神を現代で体現する為にエンジニアを志す。"
-                    <br>
-                    <br>
+                    <div id="skills_container">
+                            <div class="skills_thumb">
+                                <img src="java.png" width="120" height="120">
+                                <h3>Java SE8</h3>
+                            </div>
+                            <div class="skills_thumb">
+                                <img src="js.png" width="120" height="120">
+                                <h3>JavaScript</h3>
+                                <h4>(jQuery)</h4>
+                            </div>
+                            <div class="skills_thumb">
+                                <img src="HTML5.png" width="120" height="120">
+                                <h3>HTML5</h3>
+                            </div>
+                            <div class="skills_thumb">
+                                <img src="css.png" width="120" height="120">
+                                <h3>CSS3</h3>
+                            </div>
+                            <div class="skills_thumb">
+                                <img src="php.png" width="120" height="120">
+                                <h3>PHP</h3>
+                            </div>
+                            <div class="skills_thumb1">
+                                <img src="sql.png" width="80" height="120">
+                                <h3>SQL</h3>
+                                <h4>(MySQL)</h4>
+                            </div>                            
+                    </div>
                 </div>
-                <div id="works" style="display: block;">
+                
+                <div id="works" class="anchor">
                     <div class="index">
-                        <p>Works:</p>
+                        <h2>Works:</h2>
                     </div>
                     <br>
                     <br>
                     <div id="works_container">
-                        <div class="works_thumb">
-                            <!-- <a href="" target="_blank"> -->
-                                <img src="sample.jpg" width="190" height="190" alt>
-                            <!-- </a> -->
-                            <br>
-                            <p>サンプル１</p>
-                        </div>
-                        <div class="works_thumb">
-                            <!-- <a href="" target="_blank"> -->
-                                <img src="sample.jpg" width="190" height="190" alt>
-                            <!-- </a> -->
-                            <br>
-                            <p>サンプル2</p>
-                        </div>
-                        <div class="works_thumb">
-                            <!-- <a href="" target="_blank"> -->
-                                <img src="sample.jpg" width="190" height="190" alt>
-                            <!-- </a> -->
-                            <br>
-                            <p>サンプル3</p>
+                        <div id="target">
+                            <div class="works_thumb">
+                                <!-- <a href="" target="_blank"> -->
+                                    <img src="sample.jpg" width="190" height="190" alt>
+                                <!-- </a> -->
+                                <br>
+                                <p>サンプル１</p>
+                            </div>
+                            <div class="works_thumb">
+                                <!-- <a href="" target="_blank"> -->
+                                    <img src="sample.jpg" width="190" height="190" alt>
+                                <!-- </a> -->
+                                <br>
+                                <p>サンプル2</p>
+                            </div>
+                            <div class="works_thumb">
+                                <!-- <a href="" target="_blank"> -->
+                                    <img src="sample.jpg" width="190" height="190" alt>
+                                <!-- </a> -->
+                                <br>
+                                <p>サンプル3</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="contact" style="display: block;">
-                    <p>Contact:</p>
-                    <div id="email">
-                        "ryuto1014@gmail.com"
+                
+                <div id="contact" class="anchor">
+                    <div class="index">
+                        <h2>Contact:</h2>
                     </div>
-                </div>
-                <div id="footer" onclick="javascript:returnTop()" style="display: block;">
-                </div>
-            </div>                
+                    <div id="form">
+                        <form action="GoogleフォームのURL" method="post">
+                            <div class="form_contents">
+                                <input class="form_text" type="text" name="Googleフォームからコピペ"  placeholder="Your Name">
+                            </div>
+                            <div class="form_contents">
+                                <input class="form_text" type="email" name="Googleフォームからコピペ"  placeholder="Your Email">
+                            </div>                            
+                            <div class="form_contents">
+                                <input class="form_text" type="text" name="Googleフォームからコピペ"  placeholder="Subject">
+                            </div>                          
+                            <div class="text_area">
+                                <textarea class="textarea" name="Googleフォームからコピペ" rows="12" cols="58" placeholder="Messages..."></textarea>
+                            </div>
+                            <button class="btn" type="submit" name="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>                
         </main>
-            
+        <footer>
+                <div id="footer">
+                    <a href="#ryuto" class="scroll"><img src="scroll.png" width="50" height="50"></a>
+                </div>            
+        </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="textyle.js"></script>
     </body>
     
 </html>

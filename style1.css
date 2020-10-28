@@ -1,0 +1,261 @@
+body {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0.2) 70%), url(background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+}
+ 
+      
+      
+#copyright {
+    font-family: 'Offside', cursive;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+#header_line {
+    width: 99%;
+    position: fixed;
+    top: 30px;
+    height: 1px;
+    border: none;
+    background-color: #000000;
+}
+
+#logo {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+}
+
+#menulist {
+    position: fixed;
+    top: 40px;
+    margin-left:  10px;
+    text-align: right;
+}
+
+#menulist li {
+    font-family: 'Offside', cursive;
+}
+
+ul {
+    list-style: none;
+    line-height: 3em;
+}
+
+main {
+    margin-left: 20%;
+}
+
+#ryuto {
+    text-align: center;
+}
+
+#me {
+    margin-right: 25%;
+    margin-top: 27%;
+}
+
+#line {
+    width: 17%;
+    border: none;
+    background-color: #000000;
+    height: 1px;
+}
+
+.letter {
+    margin : 0;
+    padding : 0;
+    font-size : 1.5rem;
+    font-weight : 900;
+    line-height : 1;
+    letter-spacing : 1.5px;
+    font-family: 'Offside', cursive;
+}
+
+#job .letter {
+    color: #ffffff;
+}
+
+#myname {
+    opacity: 0;
+}
+
+#myname span {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+#job {
+    opacity: 0;    
+}
+
+#job span {
+    position: relative;
+    left: -10px;
+    opacity: 0; 
+}
+
+#philosophy {
+    line-height: 3em;
+    margin-top: 70%;
+    font-size: 50px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.index {
+    font-family: 'Offside', cursive;
+    font-size: 20px;
+}   
+
+#about {
+    margin-top: 70%;
+}
+
+#description {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    line-height: 45px;
+    width: 480px;
+    height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    margin-top: 6%;
+    margin-left: 13%;
+    background: rgba(250, 250, 250, 0.4);
+}
+
+#skills {
+    margin-top: 70%;
+}
+
+#skills_container {
+    margin-top: 5%;
+}
+
+.skills_thumb h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.skills_thumb h4 {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+.skills_thumb {
+    float: left;
+    margin-left: 3%;
+}
+
+.skills_thumb1 {
+    float: left;
+    margin-left: 5%;
+}
+
+.skills_thumb1  h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.skills_thumb1 h4 {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+#works {
+    margin-top: 70%;
+    clear: left;
+}
+
+.works_thumb {
+    float: left;
+    margin: 5% 5% 40% 5%;
+}
+
+#works p {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+#contact {
+    clear: left;
+    margin-bottom: 10%;
+}
+
+#contact .index {
+    margin-bottom: 4%;
+}
+
+#form {
+    margin-left: 12%;
+    padding-top: 2%;
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form_text {
+    width: 50%;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.text_area {
+    margin-top: 2%;;
+}
+
+.textarea {
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px;
+}
+
+.btn {
+    border: none;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.anchor {
+    display: block;
+    padding-top: 10%;
+    margin-top: -10%;
+}
+
+.anchor_top {
+    display: block;
+    padding-top: 25%;
+    margin-top: -25%;
+}
+
+#menulist a {
+    text-decoration: none;
+    color: #000000;
+    
+} 
