@@ -139,35 +139,37 @@ main {
     margin-top: 5%;
 }
 
-.skills_thumb h3{
-    font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
-    margin-bottom: 0;
+.skills_thumb1, .skills_thumb2, .skills_thumb3, .skills_thumb4, .skills_thumb5 {
+    float: left;
+    margin-left: 3%;
 }
 
-.skills_thumb h4 {
+.skills_thumb1, .skills_thumb2, .skills_thumb3, .skills_thumb4, .skills_thumb5 h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+.skills_thumb2 h3 {
+    margin-bottom: 0;
+}
+.skills_thumb2 h4 {
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     margin-top: 0;
 }
 
-.skills_thumb {
-    float: left;
-    margin-left: 3%;
-}
-
-.skills_thumb1 {
+.skills_thumb6 {
     float: left;
     margin-left: 5%;
 }
 
-.skills_thumb1  h3{
+.skills_thumb6  h3{
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     margin-bottom: 0;
 }
 
-.skills_thumb1 h4 {
+.skills_thumb6 h4 {
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     margin-top: 0;

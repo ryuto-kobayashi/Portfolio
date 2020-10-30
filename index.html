@@ -5,22 +5,38 @@
     <head>
         <meta charset="UTF-8">
         <title>RyutoKobayashi</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="css/bg-gradation.css">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen and (min-width:1025px)">
+        <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (min-width:481px) and (max-width:1024px)">
+        <link rel="stylesheet" type="text/css" href="small.css" media="screen and (max-width:480px)">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cherry+Swash&family=Knewave&family=Noto+Sans+JP:wght@300&family=Offside&family=Reenie+Beanie&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
     </head>
     <body>
         
         <header>
-            <div id="copyright">
-                <p>©2020/Ryuto Kobayashi/All Right Reserved</p>
+            <script>
+                $(function() {
+                 $('.Toggle').click(function() {
+                   $(this).toggleClass('active');
+                  $('#menulist').toggleClass('open');
+                 });
+                });
+            </script>
+        <nav>
+            <div class="drawer">
+                <div id="copyright">
+                    <p>©2020/Ryuto Kobayashi/All Right Reserved</p>
+                </div>
+                <div class="Toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div id="logo">
-                <img src="pagelogo.png" width="200px" height="200px">
-            </div>
-            <nav id="menulist">
-                <ul style="display:block;">
+            <div id="menulist">
+                <ul>
                     <li>
                         <a href="#philosophy" class="scroll">Philosophy</a>
                     </li>
@@ -37,12 +53,16 @@
                         <a href="#contact" class="scroll">Contact</a>
                     </li>                
                 </ul>
-            </nav>
-            <div id="menu_line"></div>
+            </div>
+        </nav>
+        <div id="logo">
+            <img src="pagelogo.png" width="200px" height="200px">
+        </div>
+        <div id="menu_line"></div>
         <header>
         
             
-        <main>                
+        <main>             
                 <div id="ryuto" class="anchor_top"> 
                     <div id="me">
                         <div id="myname">
@@ -100,41 +120,38 @@
                     <br>
                     <br>
                     <div id="skills_container">
-                            <div class="skills_thumb">
+                            <div class="skills_thumb1">
                                 <img src="java.png" width="120" height="120">
                                 <h3>Java SE8</h3>
                             </div>
-                            <div class="skills_thumb">
+                            <div class="skills_thumb2">
                                 <img src="js.png" width="120" height="120">
                                 <h3>JavaScript</h3>
                                 <h4>(jQuery)</h4>
                             </div>
-                            <div class="skills_thumb">
+                            <div class="skills_thumb3">
                                 <img src="HTML5.png" width="120" height="120">
                                 <h3>HTML5</h3>
                             </div>
-                            <div class="skills_thumb">
+                            <div class="skills_thumb4">
                                 <img src="css.png" width="120" height="120">
                                 <h3>CSS3</h3>
                             </div>
-                            <div class="skills_thumb">
+                            <div class="skills_thumb5">
                                 <img src="php.png" width="120" height="120">
                                 <h3>PHP</h3>
                             </div>
-                            <div class="skills_thumb1">
+                            <div class="skills_thumb6">
                                 <img src="sql.png" width="80" height="120">
                                 <h3>SQL</h3>
                                 <h4>(MySQL)</h4>
                             </div>                            
                     </div>
-                </div>
-                
+                </div>                
                 <div id="works" class="anchor">
                     <div class="index">
                         <h2>Works:</h2>
                     </div>
-                    <br>
-                    <br>
                     <div id="works_container">
                         <div id="target">
                             <div class="works_thumb">
