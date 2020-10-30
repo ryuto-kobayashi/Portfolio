@@ -10,14 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cherry+Swash&family=Knewave&family=Noto+Sans+JP:wght@300&family=Offside&family=Reenie+Beanie&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    
     <body>
         
         <header>
             <div id="copyright">
                 <p>©2020/Ryuto Kobayashi/All Right Reserved</p>
             </div>
-            <hr id="header_line">
             <div id="logo">
                 <img src="pagelogo.png" width="200px" height="200px">
             </div>
@@ -40,6 +38,7 @@
                     </li>                
                 </ul>
             </nav>
+            <div id="menu_line"></div>
         <header>
         
             
@@ -56,12 +55,14 @@
                         </div>
                             <hr id="line">
                         <div id="job">
-                            <span class="letter">E</span>
-                            <span class="letter">n</span>
+                            <span class="letter">P</span>
+                            <span class="letter">r</span>
+                            <span class="letter">o</span>
                             <span class="letter">g</span>
-                            <span class="letter">i</span>
-                            <span class="letter">n</span>
-                            <span class="letter">e</span>
+                            <span class="letter">r</span>
+                            <span class="letter">a</span>
+                            <span class="letter">m</span>
+                            <span class="letter">m</span>
                             <span class="letter">e</span>
                             <span class="letter">r</span>
                         </div>
@@ -69,22 +70,27 @@
                 </div>
                 
                 <div id="philosophy" class="anchor">
-                    I'm gonna write something shit right here later.<br>
-                    Let me say just F**K for now.
+                    <p>
+                        Hello world.<br>
+                        My ideal is to create programs to optimize people's lives.<br>
+                        Let me do it for you as well.
+                    </p>
                 </div>
                 
                 <div id="about" class="anchor">
                     <div class="index">
                         <h2>About me:</h2>
                     </div>
-                    <p id="description">
-                        <br>
-                        Ryuto Kobayashi / 小林 竜斗<br>
-                        1995/10/14 <br>
-                        東京都在住。<br>
-                        浅草で生まれ育ち、幼少期から常に下町文化の中に身を置く。<br>
-                        モノづくりの精神を現代で体現する為にエンジニアを志す。<br>
-                    </p>
+                    <div id="description_back">
+                        <p id="description">
+                            <br>
+                            Ryuto Kobayashi / 小林 竜斗<br>
+                            Born in 1995. <br>
+                            Living in Tokyo.<br>
+                            東京の下町で生まれ育ち、幼少期から常にモノづくり文化に囲まれる。<br>
+                            その精神を現代で体現する為にプログラマーを志す。<br>
+                        </p>
+                    </div>
                 </div>
                 
                 <div id="skills" class="anchor">
@@ -156,27 +162,68 @@
                     </div>
                 </div>
                 
-                <div id="contact" class="anchor">
+                <div id="contact" class="contact_anc">
                     <div class="index">
                         <h2>Contact:</h2>
                     </div>
                     <div id="form">
-                        <form action="GoogleフォームのURL" method="post">
-                            <div class="form_contents">
-                                <input class="form_text" type="text" name="Googleフォームからコピペ"  placeholder="Your Name">
-                            </div>
-                            <div class="form_contents">
-                                <input class="form_text" type="email" name="Googleフォームからコピペ"  placeholder="Your Email">
-                            </div>                            
-                            <div class="form_contents">
-                                <input class="form_text" type="text" name="Googleフォームからコピペ"  placeholder="Subject">
-                            </div>                          
-                            <div class="text_area">
-                                <textarea class="textarea" name="Googleフォームからコピペ" rows="12" cols="58" placeholder="Messages..."></textarea>
-                            </div>
-                            <button class="btn" type="submit" name="submit">Submit</button>
-                        </form>
+                        <div id="formWrapper">
+                        <p>Feel free to contact me!</p>
+                            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdUb2158Mg7TB6HgYXeXYHbAYC2HHB1Obgqcz7Joq0rDIGTGA/formResponse"　method="post" name="myForm" target="dummyIframe">
+                                <div class="form_contents">
+                                    <input class="form_text" id="name" type="text" name="entry.2005620554"  placeholder="Your Name">
+                                </div>
+                                <div class="form_contents">
+                                    <input class="form_text" id="mail" type="email" name="entry.1045781291"  placeholder="Your Email" pattern="^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$">
+                                </div>                            
+                                <div class="form_contents">
+                                    <input class="form_text" id="subject" type="text" name="entry.273067496"  placeholder="Subject">
+                                </div>                          
+                                <div class="text_area">
+                                    <textarea class="textarea" id="massage" name="entry.839337160" rows="12" cols="58" placeholder="Messages..."></textarea>
+                                </div>
+                                <input class="btn" type="submit" value="Submit" onclick="submitForm()"/>
+                            </form>
+                            <iframe name="dummyIframe" style="display:none;"></iframe>
+                        </div>
+                        <div id="thxMessage" style="display:none;">
+                            <p id="thx"><font size="7">Thank you!</font></p>
+                            <p>
+                                ご連絡ありがとうございます！<br>
+                                ご入力いただいたメールアドレスに後ほど返信致します。<br>
+                                ページを更新すると再度問い合わせフォームが表示されます。
+                            </p>
+                        </div>
                     </div>
+                    <script>
+                        function submitForm(){
+                            document.myForm.submit();
+                            var name=document.getElementsByName("entry.2005620554")[0];
+                            var mail=document.getElementsByName("entry.1045781291")[0];
+                            var mail1=document.getElementsByName("entry.1045781291")[0].value;
+                            var message=document.getElementsByName("entry.839337160")[0];
+                            var reg = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/
+                            if (name.value.length == 0) {
+                              alert("お名前は必須項目です。");
+                              name.focus();
+                              return;
+                              } else if (mail.value.length == 0) {
+                                alert("メールアドレスは必須項目です。");
+                                mail.focus();
+                                return;  
+                              } else if (message.value.length == 0) {
+                                alert("メッセージ内容は必須項目です。");
+                                message.focus();
+                                return;  
+                              } else if (!reg.test(mail1)) {
+                                alert("正しいメールアドレスを入力してください。");
+                                mail2.focus();
+                                return;  
+                              }     
+                            document.getElementById('formWrapper').style.display = 'none';
+                            document.getElementById('thxMessage').style.display = 'block';
+                        }
+                    </script>                    
                 </div>                
         </main>
         <footer>

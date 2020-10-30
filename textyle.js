@@ -3,8 +3,8 @@
 		var target = this;
 		var targetTxt = target.contents();
 		var defaults = {
-					duration : 400,
-					delay : 100,
+					duration : 600,
+					delay : 200,
 					easing : 'swing',
 					callback : null
 				};
@@ -45,7 +45,7 @@ $(window).on('load',function(){
     easing : 'easeInCubic',
     callback : function(){
       $(this).css({
-        color : '#708090',
+        color : '#818181',
         transition : '0.8s',
       });
       $('.desc').css('opacity',1);
