@@ -3,6 +3,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 0;
+    height: 100%;
+    width: auto;
 }
  
 nav{
