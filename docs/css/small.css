@@ -108,7 +108,7 @@ nav{
     right: 0px;
     margin-right: 2%;
     margin-top: 2%;
-    font-size: 1px;
+    font-size: 10px;
 }
 
 #logo {
@@ -136,7 +136,7 @@ main {
 }
 
 #me {
-    margin-top: 90%;
+    margin-top: 50%;
 }
 
 #line {
@@ -185,7 +185,7 @@ main {
     line-height: 3em;
     margin-top: 110%;
     margin-left: 7%;
-    padding-top: 50%;
+    padding-top: 25%;
     font-size: 30px;
     font-family: 'Reenie Beanie', cursive;
     text-align: left;
@@ -199,7 +199,7 @@ main {
 
 #about {
     margin-top: 70%;
-    padding-top: 50%; 
+    padding-top: 30%
 }
 
 #description {
@@ -219,7 +219,7 @@ main {
 
 #skills {
     margin-top: 70%;
-    padding-top: 40%;
+    padding-top: 25%;
 }
 
 #skills_container {
@@ -404,15 +404,15 @@ main {
 
 #footer {
     position: fixed;
-    bottom: 0;
+    bottom: 2%;
     left: 50%;
     transform: translate(-50%);
 }
 
 .anchor {
     display: block;
-    padding-top: 10%;
-    margin-top: -10%;
+    padding-top: 20%;
+    margin-top: -20%;
 }
 
 .anchor_top {
@@ -423,8 +423,8 @@ main {
 
 .contact_anc {
     display: block;
-    padding-top: 3%;
-    margin-top: -3%;
+    padding-top: 10%;
+    margin-top: -10%;
 }
 
 #menulist a {
